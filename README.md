@@ -22,7 +22,7 @@ The following secrets are required to be set on the repository:
 The following environment variables need to be set in the workflow:
 
 1. AWS_REGION: (e.g. eu-west-1)
-1. EKS_CLUSTER_NAME: (e.g. fantastic-party-9999999999)
+1. EKS_CLUSTER_NAME: (e.g. DABA)
 
 You can optionally change the name of the ECR repo mentioned above in prereqs.
 

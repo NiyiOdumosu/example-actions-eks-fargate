@@ -58,6 +58,7 @@ eksctl create iamserviceaccount \
        --override-existing-serviceaccounts \
        --approve
 
+
 AWS_VPC_ID=$(aws eks describe-cluster --name $CLUSTER_NAME | jq -r '.cluster.resourcesVpcConfig.vpcId')
 
 curl -sS "https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/alb-ingress-controller.yaml" \

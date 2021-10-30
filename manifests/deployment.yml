@@ -18,6 +18,10 @@ spec:
       labels:
         app: aws-example-octodex
     spec:
+      volumes:
+        - name: secret-volume
+          secret:
+            secretName: aws-example-octadex
       containers:
       - name: aws-example-octodex
         # image: 00000000000000.dkr.ecr.my-region.amazonaws.com/example-eks:tag

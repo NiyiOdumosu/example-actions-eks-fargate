@@ -30,8 +30,12 @@ spec:
         image: example-eks
         ports:
         - containerPort: 5000
+        - containerPort: 443
         resources:
           requests:
             cpu: 250m
           limits:
             cpu: 500m
+        volumeMounts:
+          - mountPath: /etc/aws-example-octodex/ssl
+            name: secret-volume
